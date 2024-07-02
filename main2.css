@@ -1,0 +1,63 @@
+body {
+    background-color: #000;
+    color: #7FFFD4;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1, h2, h3, p {
+    margin: 10px 0;
+}
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+p {
+    font-size: 1em;
+    margin-left: 20px;
+}
+
+.command-section {
+    margin-bottom: 20px;
+}
+
+.output {
+    margin-left: 20px;
+}
+
+.output h3 {
+    margin-bottom: 5px;
+    color: #7FFFD4;
+}
+
+.output img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #7FFFD4;
+    margin-top: 10px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #7FFFD4;
+    margin: 20px 0;
+}
+*{
+    margin: 0;
+    padding: 0;
+}

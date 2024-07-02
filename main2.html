@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DBMS Commands Practical</title>
+    <link rel="stylesheet" href="main2.css">
+</head>
+<body>
+    <section class="container">
+        <h1>Keywords or Commands Used in SQL to Imply Change in DBMS</h1>
+        
+        <div class="command-section">
+            <h2>1. CREATE DATABASE</h2>
+            <p>Used to create a new database.</p>
+            <h3>Syntax:</h3>
+            <p>CREATE DATABASE database_name;</p>
+            <h3>Example:</h3>
+            <p>CREATE DATABASE STUDENT;</p>
+            <div class="output">
+                <h3>Output:</h3>
+                <img src="create.png" alt="Output for CREATE DATABASE">
+            </div>
+            <hr>
+        </div>
+        
+        <div class="command-section">
+            <h2>2. CREATE TABLE</h2>
+            <p>Used to create a new table in the database.</p>
+            <h3>Syntax:</h3>
+            <p>CREATE TABLE table_name(column_name datatype, column_name datatype, column_name datatype ...);</p>
+            <h3>Example:</h3>
+            <p>CREATE TABLE HOMEWORK
+                (ID INT(3) PRIMARY KEY AUTO_INCREMENT,
+                NAME VARCHAR(255),
+                ADDRESS VARCHAR(255),
+                STAT VARCHAR(255),
+                GENDER VARCHAR(30));</p>
+            <div class="output">
+                <h3>Output:</h3>
+                <img src="table.png" alt="Output for CREATE TABLE">
+            </div>
+            <hr>
+        </div>
+        
+        <div class="command-section">
+            <h2>3. ALTER</h2>
+            <p>Used to alter or modify new records into a table.</p>
+            <h3>Syntax:</h3>
+            <p>ALTER TABLE table_name <br>ADD COLUMN column_name INT(x);</p>
+            <h3>Example:</h3>
+            <p>ALTER TABLE HOMEWORK <br>ADD COLUMN AGE INT(3);</p>
+            <div class="output">
+                <h3>Output:</h3>
+                <img src="alt.png" alt="Output for INSERT INTO">
+            </div>
+            <hr>
+        </div>
+        
+        <div class="command-section">
+            <h2>4. ADD</h2>
+            <p>Used to add new datas like field in table.</p>
+            <h3>Syntax:</h3>
+            <p>ALTER TABLE table_name <br>ADD COLUMN column_name INT(x);</p>
+            <h3>Example:</h3>
+            <p>ALTER TABLE HOMEWORK <br>ADD COLUMN AGE INT(3);</p>
+            <div class="output">
+                <h3>Output:</h3>
+                <img src="alt.png" alt="Output for INSERT INTO">
+            </div>
+            <hr>
+        </div>
+
+        <div class="command-section">
+            <h2>5. SELECT</h2>
+            <p>Used to retrieve data from a database.</p>
+            <h3>Syntax:</h3>
+            <p>SELECT column_name, column_name, column_name, ... FROM table_name;</p>
+            <h3>Example:</h3>
+            <p>SELECT * FROM HOMEWORK;</p>
+            <div class="output">
+                <h3>Output:</h3>
+                <img src="path/to/your/image4.jpg" alt="Output for SELECT">
+            </div>
+            <hr>
+        </div>
+        
+        <div class="command-section">
+            <h2>6. UPDATE</h2>
+            <p>Used to modify existing records in a table.</p>
+            <h3>Syntax:</h3>
+            <p>UPDATE table_name SET column_name = value, column_name = value, ... WHERE condition;</p>
+            <h3>Example:</h3>
+            <p>UPDATE HOMEWORK SET PHONE = 1234567890 WHERE ROLLNO = 1;</p>
+            <div class="output">
+                <h3>Output:</h3>
+                <img src="path/to/your/image5.jpg" alt="Output for UPDATE">
+            </div>
+            <hr>
+        </div>
+        
+        <div class="command-section">
+            <h2>7. DELETE</h2>
+            <p>Used to delete existing records from a table.</p>
+            <h3>Syntax:</h3>
+            <p>DELETE TABLE table_name;</p>
+            <h3>Example:</h3>
+            <p>DELETE TABLE HOMEWORK;</p>
+            <div class="output">
+                <h3>Output:</h3>
+                <img src="create.png" alt="Output for DELETE">
+            </div>
+            <hr>
+        </div>
+
+        <div class="command-section">
+            <h2>8. INSERT INTO</h2>
+            <p>Used to insert new records into a table.</p>
+            <h3>Syntax:</h3>
+            <p>INSERT INTO table_name(column_name, column_name, column_name, ...) VALUES(value1, value2, value3, ...);</p>
+            <h3>Example:</h3>
+            <p>INSERT INTO HOMEWORK(ROLLNO, NAME, ADDRESS, PHONE) VALUES(1, 'Rahul', 'Delhi', 1234567890);</p>
+            <div class="output">
+                <h3>Output:</h3>
+                <img src="path/to/your/image3.jpg" alt="Output for INSERT INTO">
+            </div>
+            <hr>
+        </div>
+    </section>
+</body>
+</html>
