@@ -1,0 +1,92 @@
+body {
+    background-color: #1a1a1a; /* Darkish background */
+    color: #ffffff; /* White text */
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333333; /* Darker header background */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.rainbow-heading {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 10px;
+    display: inline-block;
+    background: linear-gradient(270deg, #ff0000, #ff9900, #ffff00, #33cc33, #3399ff, #6633cc, #ff33cc);
+    background-size: 1400% 1400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow 10s ease infinite;
+}
+
+.content-section {
+    padding: 40px 20px;
+    max-width: 1000px; /* Adjusted width to fit two cards */
+    margin: 0 auto;
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.introduction {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #3a3a3a;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.relationship-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.relationship-card {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #3a3a3a;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.relationship-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    border: 2px solid transparent;
+    background: linear-gradient(270deg, #ff0000, #ff9900, #ffff00, #33cc33, #3399ff, #6633cc, #ff33cc);
+    background-size: 400% 400%;
+    animation: borderRainbow 10s ease infinite;
+    -webkit-background-clip: padding-box;
+    -webkit-text-fill-color: #fff;
+}
+
+.relationship-card h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.relationship-card p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+@keyframes rainbow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes borderRainbow {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
+}

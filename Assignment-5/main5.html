@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of Database Management Models</title>
+    <link rel="stylesheet" href="main5.css">
+</head>
+<body>
+    <header>
+        <h1 class="rainbow-heading">Types of Database Management Models</h1>
+    </header>
+    <main>
+        <section class="dbms-section">
+            <article class="dbms-model">
+                <h2>Relational DBMS</h2>
+                <p>Relational DBMS (RDBMS) uses a structure that allows users to identify and access data in relation to another piece of data in the database. Often data is organized into tables consisting of rows and columns, making it straightforward to retrieve and manipulate data. It is widely used due to its simplicity and flexibility.</p>
+                <img src="relational-dbms.png" alt="Relational DBMS">
+            </article>
+            <article class="dbms-model">
+                <h2>Hierarchical DBMS</h2>
+                <p>Hierarchical DBMS structures data in a tree-like format where each record has a single parent and many children. This model is suitable for applications with a strict hierarchy such as organizational structures. However, it can be less flexible when the data model needs to change.</p>
+                <img src="hierarchical-dbms.png" alt="Hierarchical DBMS">
+            </article>
+            <article class="dbms-model">
+                <h2>Object-oriented DBMS</h2>
+                <p>Object-oriented DBMS (OODBMS) integrates database capabilities with object-oriented programming languages, storing objects rather than data such as integers, strings, or real numbers. This model supports complex data and allows for more seamless integration with object-oriented programming languages.</p>
+                <img src="object-oriented-dbms.png" alt="Object-oriented DBMS">
+            </article>
+            <article class="dbms-model">
+                <h2>Network DBMS</h2>
+                <p>Network DBMS structures data more flexibly than hierarchical DBMS, using a graph structure. Each record can have multiple parent and child records, allowing for more complex relationships. This model is useful for applications with many-to-many relationships.</p>
+                <img src="network-dbms.png" alt="Network DBMS">
+            </article>
+            <article class="dbms-model">
+                <h2>Distributed DBMS</h2>
+                <p>Distributed DBMS (DDBMS) distributes data across multiple databases located in different physical locations. These databases are connected via a network, allowing data to be accessed and managed as a single database. This model enhances data availability and reliability.</p>
+                <img src="distributed-dbms.png" alt="Distributed DBMS">
+            </article>
+            <article class="dbms-model">
+                <h2>Centralized DBMS</h2>
+                <p>Centralized DBMS stores data in a single location, typically on a central server. This model simplifies data management and reduces redundancy, but it can become a bottleneck and single point of failure, affecting performance and availability.</p>
+                <img src="centralized-dbms.png" alt="Centralized DBMS">
+            </article>
+        </section>
+    </main>
+</body>
+</html>

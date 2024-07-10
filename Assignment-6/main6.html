@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relationships in DBMS</title>
+    <link rel="stylesheet" href="main6.css">
+</head>
+<body>
+    <header>
+        <h1 class="rainbow-heading">Relationships in DBMS</h1>
+    </header>
+    <main>
+        <section class="content-section">
+            <article class="introduction">
+                <h2>Understanding Relationships in DBMS</h2>
+                <p>In a Database Management System (DBMS), relationships are used to describe the associations between entities. These relationships are crucial for defining how data in one table relates to data in another. They help in maintaining data integrity and facilitating efficient data retrieval. There are various types of relationships in a DBMS, each defining a different way in which data entities are linked.</p>
+            </article>
+            <section class="relationship-cards">
+                <article class="relationship-card">
+                    <h3>One-to-One Relationship</h3>
+                    <p>A one-to-one relationship exists when a single record in one table is associated with a single record in another table. This type of relationship is not very common and is typically used for splitting data into multiple tables for security or performance reasons.</p>
+                </article>
+                <article class="relationship-card">
+                    <h3>One-to-Many Relationship</h3>
+                    <p>In a one-to-many relationship, a single record in one table can be associated with multiple records in another table. This is the most common type of relationship in a DBMS. For example, a single customer can have multiple orders.</p>
+                </article>
+                <article class="relationship-card">
+                    <h3>Many-to-One Relationship</h3>
+                    <p>A many-to-one relationship is the inverse of a one-to-many relationship. Here, multiple records in one table are associated with a single record in another table. For instance, multiple employees can belong to a single department.</p>
+                </article>
+                <article class="relationship-card">
+                    <h3>Many-to-Many Relationship</h3>
+                    <p>In a many-to-many relationship, multiple records in one table can be associated with multiple records in another table. This type of relationship is implemented using a junction table that holds foreign keys referencing the primary keys of the related tables. For example, students and courses have a many-to-many relationship.</p>
+                </article>
+            </section>
+        </section>
+    </main>
+</body>
+</html>

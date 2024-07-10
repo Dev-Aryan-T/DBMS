@@ -27,45 +27,43 @@ header {
     animation: rainbow 10s ease infinite;
 }
 
-.role-section {
+.dbms-section {
     padding: 40px 20px;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     background-color: #2a2a2a;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
-.role-section h2 {
+.dbms-model {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #3a3a3a;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dbms-model:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+.dbms-model h2 {
     font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.dbms-model p {
+    font-size: 1.1em;
+    line-height: 1.6;
     margin-bottom: 20px;
-    text-align: center;
-    text-transform: uppercase;
 }
 
-.role-section ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-.role-section li {
-    margin-bottom: 20px;
-    padding: 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.role-section li:hover {
-    background-color: #444444;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-}
-
-.rainbow-hover:hover {
-    background: linear-gradient(270deg, #ff0000, #ff9900, #ffff00, #33cc33, #3399ff, #6633cc, #ff33cc);
-    background-size: 1400% 1400%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: rainbow 10s ease infinite;
+.dbms-model img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 @keyframes rainbow {

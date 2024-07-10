@@ -4,12 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="example.css"> <!-- New CSS file for advanced styling -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <title>DBMS PROJECT</title>
 </head>
 <body>
+  <nav class="navbar">
+    <div class="logo">
+      <h2>DBMS Project</h2>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="#"><i class="fas fa-tasks"></i> Assignments</a></li>
+      <li><a href="#"><i class="fas fa-info-circle"></i> About</a></li>
+    </ul>
+  </nav>
   <section class="first">
-    <h1 style="font-size: xx-large; font-family: cursive;">DBMS DAILY ASSIGNMENT RECORDS</h1>
-    <p class="typewriter" style="font-family: cursive;">DEVELOPED BY: ARYAN THAPALIYA</p>
+    <h1 class="main-heading">DBMS DAILY ASSIGNMENT RECORDS</h1>
+    <p class="typewriter" id="typewriter"></p>
   </section>
   <section class="second">
     <table class="record">
@@ -25,8 +37,8 @@
       </tr>
       <tr>
         <td><a href="Assignment-2/main2.html" style="text-decoration: none; color: #d7b94c;">Assignment-2</a></td>
-          <td>1st july</td>
-          <td>DBMS QUERIES</td>
+        <td>1st july</td>
+        <td>DBMS QUERIES</td>
       </tr>
       <tr>
         <td> <a href="Assignment-3/main3.html" style="text-decoration: none; color: #d7b94c;">Assignment-3</a></td>
@@ -36,9 +48,16 @@
       <tr>
         <td><a href="Assignment-4/main4.html" style="text-decoration: none; color: #d7b94c;">Assignment-4</a></td>
         <td>3rd july</td>
-        <td>Lab Report Questions</td>
+        <td>Roles of DBA</td>
+      </tr>
+      <tr>
+        <td><a href="Assignment-5/main5.html" style="text-decoration: none; color: #d7b94c;">Assignment-5</a></td>
+        <td>8-9th july</td>
+      <td>Types of DATABASE MANAGEMENT MODELS</td>
       </tr>
     </table>
   </section>
+
+  <script src="script.js"></script> <!-- New JS file for typewriter effect -->
 </body>
 </html>
