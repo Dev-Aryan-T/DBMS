@@ -1,130 +1,172 @@
 /* Global reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and general styling */
+body {
+  font-family: Arial, sans-serif;
+  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU5-XOV37_-EAY-oQ0ZZc5lQJFrsELpMzTvn210MSHGz0ZP-ebuTgdUv4374VmdLywc5c&usqp=CAU') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  max-height: max-content;
+
   
-  /* Body and general styling */
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #1d1f20;
-    color: white;
-  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links li a i {
+  margin-right: 8px;
+}
+
+.nav-links li a:hover {
+  color: #d7b94c;
+}
+
+.first {
+  padding: 20px;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.typewriter-container {
+  height: 40px; 
+}
+
+.second {
+  padding: 20px;
+  margin-top: 20px; 
+}
+
+.record {
+  width: 100%; 
+
+  border-collapse: collapse;
+  margin-top: 10px;
+  position: relative;
   
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #1a1c1d;
-    padding: 10px 20px;
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
+}
+
+
+
+.record::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border: 5px solid transparent;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff, #ff00ff, #00ffff, #ffff00, #ff0000);
+  background-size: 400% 400%;
+  animation: gradient-border 5s linear infinite;
+  z-index: -1;
+}
+
+@keyframes gradient-border {
+  0% {
+    background-position: 0% 50%;
   }
-  
-  .nav-links {
-    display: flex;
-    list-style: none;
+  50% {
+    background-position: 100% 50%;
   }
-  
-  .nav-links li {
-    margin-right: 20px;
+  100% {
+    background-position: 0% 50%;
   }
-  
-  .nav-links li a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s ease;
-    display: flex;
-    align-items: center;
+}
+
+.record th, .record td {
+  border: 2px solid transparent;
+  padding: 10px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #d7b94c;
+  position: relative;
+}
+
+.record th {
+  background-color: #2a2b2c;
+}
+
+.record tr:hover {
+  background-color: #333;
+}
+.typewriter {
+  font-size: x-large; 
+  position: relative;
+  color: #d7b94c;
+}
+
+.glowing-text {
+  font-family: 'Playwrite CU', cursive; 
+  font-size: 3em;
+  color: #d7b94c;
+  text-align: center;
+  margin: 10px 0;
+  animation: glowing 5s linear infinite; 
+}
+
+@keyframes glowing {
+  0% {
+    text-shadow: 0 0 5px #d7b94c, 0 0 10px #d7b94c, 0 0 15px #d7b94c, 0 0 20px #d7b94c, 0 0 25px #d7b94c, 0 0 30px #d7b94c, 0 0 35px #d7b94c;
   }
-  
-  .nav-links li a i {
-    margin-right: 8px;
+  50% {
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 50px #ff0000, 0 0 60px #ff0000, 0 0 70px #ff0000;
   }
-  
-  .nav-links li a:hover {
-    color: #d7b94c;
+  100% {
+    text-shadow: 0 0 5px #d7b94c, 0 0 10px #d7b94c, 0 0 15px #d7b94c, 0 0 20px #d7b94c, 0 0 25px #d7b94c, 0 0 30px #d7b94c, 0 0 35px #d7b94c;
   }
-  
-  .first {
-    padding: 20px;
-    text-align: center;
-    margin-top: 70px;
-  }
-  
-  .second {
-    padding: 20px;
-    margin-top: 150px;
-  }
-  
-  .record {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
-    position: relative;
-    
-  }
-  
-  .record::before {
-    content: "";
-    position: absolute;
-    top: -5px;
-    left: -5px;
-    right: -5px;
-    bottom: -5px;
-    border: 5px solid transparent;
-    border-radius: 10px;
-    background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff, #ff00ff, #00ffff, #ffff00, #ff0000);
-    background-size: 400% 400%;
-    animation: gradient-border 5s linear infinite;
-    z-index: -1;
-  }
-  
-  @keyframes gradient-border {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-  
-  .record th, .record td {
-    border: 2px solid transparent;
-    padding: 10px;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #d7b94c;
-    position: relative;
-  }
-  
-  .record th {
-    background-color: #2a2b2c;
-  }
-  
-  .record tr:hover {
-    background-color: #333;
-  }
-  
-  .typewriter {
-    font-size: x-large; /* Increased font size */
-    position: relative;
-    color: #d7b94c;
-   
-    
-  }
-  
-  @keyframes blink-caret {
-    from, to { border-color: transparent; }
-    50% { border-color: white; }
-  }
-  
-  .main-heading {
-    margin-top: 30px; /* Adjusted to prevent cutting off */
-  }
-  
+}
+
+.floating-cube {
+  position: absolute;
+  left: 20px;
+  bottom: -40px;
+  width: 300px;
+  height: 300px;
+  z-index: 10;
+  top: 40px;
+  mix-blend-mode: color-dodge;
+}
+.floating-cube2 {
+  position: absolute;
+  right: 20px;
+  bottom: -40px;
+  width: 300px;
+  height: 300px;
+  z-index: 10;
+  top: 40px;
+  mix-blend-mode: color-dodge;
+}
+
+.main-heading {
+  margin-top: 30px; 
+}
