@@ -1,0 +1,91 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+    animation: glowing-border 5s infinite;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.9);
+    animation: color-shift 10s infinite alternate;
+}
+
+.categories ul {
+    list-style: none;
+    padding: 0;
+}
+
+.categories .category {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    transition: all 0.5s ease;
+}
+
+.categories .category:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.5);
+}
+
+.categories .category h3 {
+    color: #fff;
+    margin: 0 0 10px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+.categories .category p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+pre {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    border-radius: 10px;
+    color: #00ff00;
+    font-size: 1.2em;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+    white-space: pre-wrap;
+    overflow-x: auto;
+    animation: text-glow 2s infinite alternate;
+}
+
+@keyframes glowing-border {
+    0% { border: 2px solid red; }
+    20% { border: 2px solid orange; }
+    40% { border: 2px solid yellow; }
+    60% { border: 2px solid green; }
+    80% { border: 2px solid blue; }
+    100% { border: 2px solid violet; }
+}
+
+@keyframes color-shift {
+    0% { color: red; }
+    20% { color: orange; }
+    40% { color: yellow; }
+    60% { color: green; }
+    80% { color: blue; }
+    100% { color: violet; }
+}
+
+@keyframes text-glow {
+    0% { text-shadow: 0 0 10px #ff0000; }
+    50% { text-shadow: 0 0 20px #00ff00; }
+    100% { text-shadow: 0 0 10px #0000ff; }
+}

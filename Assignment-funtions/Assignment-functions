@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions in C</title>
+    <link rel="stylesheet" href="Assignment-functions.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Functions in C</h1>
+        <p>Functions in C can be categorized into four types based on their return type and arguments.</p>
+
+        <div class="categories">
+            <h2>Types of Functions</h2>
+            <ul>
+                <li class="category">
+                    <h3>Return Type with No Argument</h3>
+                    <p>This type of function returns a value but does not take any arguments. Example: Addition</p>
+                    <pre>
+int add() {
+    int a = 5, b = 10;
+    return a + b;
+}
+                    </pre>
+                </li>
+                <li class="category">
+                    <h3>Return Type with Argument</h3>
+                    <p>This type of function returns a value and takes arguments. Example: Division</p>
+                    <pre>
+float divide(int a, int b) {
+    return (float)a / b;
+}
+                    </pre>
+                </li>
+                <li class="category">
+                    <h3>No Return Type with Argument</h3>
+                    <p>This type of function does not return a value but takes arguments. Example: Subtraction</p>
+                    <pre>
+void subtract(int a, int b) {
+    printf("Difference: %d", a - b);
+}
+                    </pre>
+                </li>
+                <li class="category">
+                    <h3>No Return Type with No Argument</h3>
+                    <p>This type of function neither returns a value nor takes arguments. Example: Multiplication</p>
+                    <pre>
+void multiply() {
+    int a = 5, b = 10;
+    printf("Product: %d", a * b);
+}
+                    </pre>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
