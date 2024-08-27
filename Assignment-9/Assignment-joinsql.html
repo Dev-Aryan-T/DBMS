@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL Foreign Key and Joins</title>
+    <link rel="stylesheet" href="Assignment-join.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Understanding Foreign Keys and SQL Joins</h1>
+        
+        <section class="content">
+            <h2>Foreign Key</h2>
+            <p>A <span class="highlight">foreign key</span> is a field (or collection of fields) in one table that uniquely identifies a row of another table. The foreign key links two tables together and ensures referential integrity within the database.</p>
+            <div class="example">
+                <h3>Example:</h3>
+                <pre>
+-- Employees table
+CREATE TABLE Employees (
+    EmployeeID INT PRIMARY KEY,
+    Name VARCHAR(50),
+    DepartmentID INT,
+    FOREIGN KEY (DepartmentID) REFERENCES Departments(DepartmentID)
+);
+
+-- Departments table
+CREATE TABLE Departments (
+    DepartmentID INT PRIMARY KEY,
+    DepartmentName VARCHAR(50)
+);
+                </pre>
+            </div>
+        </section>
+        
+        <section class="content">
+            <h2>SQL Joins</h2>
+            <p>SQL joins are used to combine rows from two or more tables based on a related column between them.</p>
+
+            <div class="join-section">
+                <h3>Inner Join</h3>
+                <p>An <span class="highlight">inner join</span> returns only the rows that have matching values in both tables.</p>
+                <div class="example">
+                    <h4>Example:</h4>
+                    <pre>
+SELECT Employees.Name, Departments.DepartmentName
+FROM Employees
+INNER JOIN Departments
+ON Employees.DepartmentID = Departments.DepartmentID;
+                    </pre>
+                </div>
+            </div>
+
+            <div class="join-section">
+                <h3>Left Join</h3>
+                <p>A <span class="highlight">left join</span> returns all the rows from the left table, and the matched rows from the right table. If there is no match, NULL values are returned for columns from the right table.</p>
+                <div class="example">
+                    <h4>Example:</h4>
+                    <pre>
+SELECT Employees.Name, Departments.DepartmentName
+FROM Employees
+LEFT JOIN Departments
+ON Employees.DepartmentID = Departments.DepartmentID;
+                    </pre>
+                </div>
+            </div>
+
+            <div class="join-section">
+                <h3>Right Join</h3>
+                <p>A <span class="highlight">right join</span> returns all the rows from the right table, and the matched rows from the left table. If there is no match, NULL values are returned for columns from the left table.</p>
+                <div class="example">
+                    <h4>Example:</h4>
+                    <pre>
+SELECT Employees.Name, Departments.DepartmentName
+FROM Employees
+RIGHT JOIN Departments
+ON Employees.DepartmentID = Departments.DepartmentID;
+                    </pre>
+                </div>
+            </div>
+
+            <div class="join-section">
+                <h3>Outer Join</h3>
+                <p>A <span class="highlight">full outer join</span> returns all the rows when there is a match in either left or right table. If there is no match, the result is NULL from the side that does not have a match.</p>
+                <div class="example">
+                    <h4>Example:</h4>
+                    <pre>
+SELECT Employees.Name, Departments.DepartmentName
+FROM Employees
+FULL OUTER JOIN Departments
+ON Employees.DepartmentID = Departments.DepartmentID;
+                    </pre>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
