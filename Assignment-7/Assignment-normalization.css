@@ -1,0 +1,81 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+.types ul {
+    list-style: none;
+    padding: 0;
+}
+
+.types .type {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.types .type:hover {
+    box-shadow: 0 0 20px #fff;
+    transform: scale(1.05);
+}
+
+pre {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    color: #00ff00;
+    overflow-x: auto;
+}
+
+.types .type:hover h3 {
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.types .type h3 {
+    color: #fff;
+    margin: 0;
+    padding: 5px 0;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #fff;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+td {
+    background-color: rgba(255, 255, 255, 0.05);
+}

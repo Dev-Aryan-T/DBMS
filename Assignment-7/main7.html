@@ -3,9 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Normalization</title>
+    <link rel="stylesheet" href="Assignment-normalization.css">
 </head>
 <body>
-    <h1><strong><center>COMMING SOON! Wait for little longer like 2 years</center></strong></h1>
+    <div class="container">
+        <h1>Normalization</h1>
+        <p>Normalization is the process of breaking down tables into normal forms to reduce data redundancy and improve data integrity.</p>
+
+        <div class="types">
+            <h2>Types of Normalization</h2>
+            <ul>
+                <li class="type">
+                    <h3>1NF (First Normal Form)</h3>
+                    <p>Each column contains atomic (indivisible) values. Basically there should not be any group or collection of data inside an entity. Example:</p>
+                    <pre>
+<table>
+  <tr><th>ID</th><th>Name</th><th>Phone</th></tr>
+  <tr><td>1</td><td>John</td><td>1234567890</td></tr>
+</table>
+                    </pre>
+                </li>
+                <li class="type">
+                    <h3>2NF (Second Normal Form)</h3>
+                    <p>Table is in 1NF, and all non-key attributes are fully functional dependent on the primary key. Here, it means to say that the every entity or column should be related to the primary key of the table. In each table the columns should be directly dependent on primary key of the original table. Example:</p>
+                    <pre>
+<table>
+  <tr><th>ID</th><th>Name</th><th>Course</th></tr>
+  <tr><td>1</td><td>John</td><td>Math</td></tr>
+</table>
+                    </pre>
+                </li>
+                <li class="type">
+                    <h3>3NF (Third Normal Form)</h3>
+                    <p>Table is in 2NF, Here it means to say that there should not be any transitive dependencies like table1 is related to Table2 and Table 2 is related to Table 3 the Table 3 should not directly be related with Table 1. Example:</p>
+                    <pre>
+<table>
+  <tr><th>ID</th><th>Name</th><th>Course</th><th>Instructor</th></tr>
+  <tr><td>1</td><td>John</td><td>Math</td><td>Mr. Smith</td></tr>
+</table>
+                    </pre>
+                </li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
