@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assignment-10.css">
+    <title>ASSIGNMENT-10</title>
+</head>
+<body>
+
+    <h1 style="font-size: xx-large; text-align: center;"><strong>NOTES AND LAB REPORTS OF FILE HANDLING IN C</strong></h1>
+
+    <header>
+        <h1 class="rainbow-heading">FILE HANDLING IN C</h1>
+    </header>
+
+    <main>
+        <section class="role-section">
+            <h2>COMMON TERMINOLOGIES IN FILE HANDLING</h2>
+            <ul>
+                <li class="rainbow-hover"><strong>FILE:</strong> A location or object where we store data in various forms, such as video, audio, text, image, etc.</li>
+                <li class="rainbow-hover"><strong>TEXT FILE:</strong> Files containing readable characters and formatted text (e.g., ASCII or UTF-8). Operations include fopen, fgets, fprintf, fclose.</li>
+                <li class="rainbow-hover"><strong>BINARY FILE:</strong> Files with data in non-readable format, stored as raw bytes. Operations include fopen, fread, fwrite, fclose.</li>
+            </ul>
+        </section>
+    </main>
+
+    <h2>fgetc Function</h2>
+    <pre class="code-section">
+Syntax:
+    int fgetc(FILE *stream);
+
+Description:
+    - Reads the next character from the specified file stream.
+    - Returns the character read as an unsigned char cast to an int or EOF if the end of the file is reached or an error occurs.
+
+Usage Example:
+    FILE *file = fopen("example.txt", "r");
+    if (file) {
+        int ch;
+        while ((ch = fgetc(file)) != EOF) {
+            putchar(ch); // Output each character to standard output
+        }
+        fclose(file);
+    } else {
+        perror("Error opening file");
+    }
+    </pre>
+    <button class="btn1" id="btn1" onclick="myoutput1()">Output</button>
+
+    <h2>fputc Function</h2>
+    <pre class="code-section">
+Syntax:
+    int fputc(int char, FILE *stream);
+
+Description:
+    - Writes the character (an unsigned char cast to an int) to the specified file stream.
+    - Returns the character written as an unsigned char cast to an int or EOF if an error occurs.
+
+Usage Example:
+    FILE *file = fopen("example.txt", "w");
+    if (file) {
+        fputc('H', file); // Write character 'H' to the file
+        fputc('e', file); // Write character 'e' to the file
+        fputc('l', file); // Write character 'l' to the file
+        fputc('l', file); // Write character 'l' to the file
+        fputc('o', file); // Write character 'o' to the file
+        fclose(file);
+    } else {
+        perror("Error opening file");
+    }
+    </pre>
+    <button class="btn2" onclick="myPoper()">Output</button>
+
+    <script>
+        function myoutput1() {
+            alert("Website under construction please wait");
+        }
+
+        function myPoper() {
+            alert("Website under construction please wait");
+        }
+    </script>
+</body>
+</html>
